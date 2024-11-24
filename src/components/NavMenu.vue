@@ -7,7 +7,10 @@ import HomePage from '@/views/HomePage.vue';
     <RouterLink :to="{ name: 'Home' }">Home</RouterLink>
     <RouterLink :to="{ name: 'MealsByName' }">Meals By Name</RouterLink>
     <RouterLink :to="{ name: 'MealsByLetter' }">Meals By Letter</RouterLink>
-    <RouterLink :to="{ name: 'MealsByIngredients', params: { ingredient: 'tomato' } }">Meals By Ingredients</RouterLink>
+    <!-- Pass the required 'ingredient' parameter -->
+    <RouterLink :to="{ name: 'MealsByIngredients', params: { ingredient: 'tomato' } }">
+      Meals By Ingredients
+    </RouterLink>
   </nav>
 </template>
 
